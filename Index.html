@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Una carta para ti</title>
+<link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+<div id="petals"></div>
+
+<div class="scene">
+  <div class="envelope-wrap" onclick="openEnvelope()">
+    <div class="envelope" id="envelope">
+      <span class="corner-flower cf-tl">🌻</span>
+      <span class="corner-flower cf-tr">🌼</span>
+
+      <div class="flap"></div>
+      <div class="flap-inner"></div>
+      <div class="flap-left"></div>
+      <div class="flap-right"></div>
+      <div class="flap-bottom"></div>
+
+      <div class="card-container" id="cardContainer">
+        <div class="card">
+          <div class="flower-row">🌻🌼🌻</div>
+          <div class="card-title">Para ti, que iluminas mis días</div>
+          <div class="card-body">
+            Como las flores amarillas que buscan el sol,<br>
+            yo siempre te busco a ti.
+          </div>
+          <div class="signature">Con todo mi amor ✦</div>
+          <div class="hearts-row">
+            <span class="heart">♥</span>
+            <span class="heart">♥</span>
+            <span class="heart">♥</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="seal" id="seal">🌼</div>
+    </div>
+  </div>
+
+  <div class="hint" id="hint">✦ Toca el sobre para abrir tu carta ✦</div>
+</div>
+
+<div class="full-letter" id="fullLetter">
+  <div class="letter-paper">
+    <div class="letter-flowers">
+      <span>🌻</span><span>🌼</span><span>🌻</span><span>🌼</span><span>🌻</span>
+    </div>
+    <div class="letter-title">Mi amor, mi luz dorada</div>
+    <hr class="divider">
+    <div class="letter-body">
+      Hay flores que nacen para recordarnos que el mundo puede ser brillante y cálido, como tú eres para mí cada día.<br><br>
+      Cada girasol que abre sus pétalos hacia el sol me recuerda cómo me siento cuando estás cerca: lleno de color, de calor, de alegría.<br><br>
+      Eres la flor amarilla que encontré en medio de un campo gris, y desde que te vi, no he podido dejar de sonreír.<br><br>
+      Gracias por ser esa luz constante, ese refugio cálido, esa presencia que hace que todo tenga más sentido.<br><br>
+      Te quiero hoy, mañana, y todos los días que vengan — como el girasol que siempre sigue al sol.
+    </div>
+    <hr class="divider">
+    <div class="letter-sig">Con todo mi corazón 🌻</div>
+    <br>
+    <button class="close-btn" onclick="closeLetter()">Cerrar carta ✕</button>
+  </div>
+</div>
+<script src="/JS/script.js"></script>
+</body>
+</html>
